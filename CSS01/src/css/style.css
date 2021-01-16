@@ -1,0 +1,17 @@
+/* Estos son estilos de los titulos */
+h1 {
+    color: white;
+    background: rgb(241, 8, 8);
+    width: 200px;
+    margin: 2em;
+}
+
+/* Variables Css ( custom properties ) */
+:root {
+    --color:  rgb(60, 253, 21);
+}
+
+h2 {
+    color: var(--color);
+}
+
