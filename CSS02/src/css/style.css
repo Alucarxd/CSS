@@ -1,0 +1,148 @@
+/* Selectores
+
+selector {
+    propriedades1: valor1;
+    propiedades2: valor2;
+}
+
+1.. Selectores simples ( una palabra )
+    h1 {}
+2.. Selectores compuestos ( mas de una palabra )
+    h2 {}
+3.. Selectores com operadores
+    h1 + span {}
+*/
+
+#title {
+    color: rgb(25, 29, 26);
+}
+
+/* variable */
+:root {
+    color: rgb(68, 19, 243);
+}
+
+/*  Selectores simples: etiqueta, tipo o elemento
+Son etiquetas HTML
+*/
+
+.fonT {
+    font-size: 50px;
+}
+
+p {
+    color: yellowgreen;
+    font-size: 15px;
+}
+
+/* Selectore simples: clases
+Se indican con un punto 
+
+*No pueden comenzar con numeros.
+* Pueden comenzar con - o _
+* Pueden ser de una letra
+* Pueden tener :
+ */
+.title-class {
+    color: var(--color)
+}
+
+.description {
+    color: rgb(46, 241, 12);
+}
+
+/* creando clases de atributo color */
+
+.redA {
+    color: rgb(248, 5, 5);
+}
+
+/* enpaquetando estilos  */
+.buttonA {
+    display: inline-block;
+    padding: .75em 2em;
+    background: steelblue;
+    color: white;
+    border-radius: .25em;
+}
+
+/* Selector con ID 
+* No son reutilizables
+*/
+
+#idSelec {
+    color: pink;
+    background: wheat;
+}
+
+/* Selectores compuestos: agrupados  */
+
+h2,p {
+    color: rgb(11, 206, 255);
+}
+
+/* Selectores compuestos: combinados */
+
+h2.fonT {
+    background: red;
+}
+
+
+p + div {
+    border: 1 px solid;
+}
+
+p ~ div {
+background: yellow;
+}
+
+/* Selector de atributo
+Usan []
+[atributo = value]
+atributo
+*/
+
+/* [type="text"]{
+    border: 1px solid red;
+}
+[type="number"]{
+    border: 1px solid green;
+} */
+
+[required] {
+    border: 1px solid yellow;
+}
+
+[type="submit"] {
+    background: steelblue;
+    border: none;
+    color: white;
+}
+
+/* 
+comienza con [atributo^="value"]
+*/
+
+[type^="sub"] {
+    background: green;
+}
+
+a[href^="http://"] {
+    color: red;
+    border-bottom: 1px dashed red;
+}
+
+/* termina con 
+[attr="value"]
+*/
+
+a[href$=".mp4"] {
+    background: red;
+}
+/* contiene
+[atributo*="value"]
+*/
+a[href*="team"] {
+    background: blue;
+    color: white;
+}
