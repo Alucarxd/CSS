@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1:hover {
+    color: yellow;
+}
+
+h2 :hover {
+    color: rgb(97, 7, 187);
+}
+
+:root {
+    --cl: pink;
+
+}
+
+h1 {
+    background: var(--cl);
+}
+
+div {
+    color: rgb(0, 0, 0);
+}
+
+.box {
+    background: yellowgreen;
+    width: 400px;
+    height: 150px;
+    transition: all .3s;
+    /*efecto para cambio suave*/
+}
+
+.box p {
+    display: none;
+}
+
+.box:hover p {
+    display: block;
+}
+
+/* .box:hover {
+    background: darkorange;
+    width: 200px;
+    height: 75px;
+} */
+a:visited {
+    color: rgb(255, 34, 34);
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: rgb(0, 26, 255);
+}
+
+/* :target, :not, :empty */
+.secreto {
+    display: none;
+}
+
+.secreto:target {
+    display: block;
+}
+
+/* Para evitar los colapson de top */
+p {
+    margin: 0;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+/* Para negacion  */
+p:not(.p2) {
+    color: red;
+}
+
+div:not(:empty) {
+    /* denegar elemento si esta vacio */
+    background: yellow;
+    padding: 2em;
+    width: 200px;
+}
+
+/* :frist-child = primer hijo, :last-child  = ultimo hijo*/
+
+div :last-child {
+    background: rgb(114, 114, 40);
+}
+
+/* los selectores :first-of-type :last-of-type no funcionan con clases,
+ :frist-child :last-child si funciona con clases */
+
+/* :first-of-type :last-of-type */
+p:last-of-type {
+    background-color: violet;
+}
+
+/* :nth-child :nth-of-type 
+:nth-chil(even) --> pares
+:nth-last-child(odd) --> impares 
+
+Posiciones
+:nth-chil(xxx)
+:nth-last-child(xxx)
+
+cuenta en
+:nth-chil(3n)
+:nth-last-child(3n)
+cuenta en mas
+:nth-chil(3n+1)
+:nth-last-child(3n+1)
+*/
+
+h4:nth-child(even) {
+    background: red;
+}
+
+h5:nth-child(odd) {
+    background: red;
+}
+
+/* h6:nth-last-child(6) {
+    background: darkgrey;
+} */
+/* cuantame en 3 en 3 */
+/* h6:nth-last-child(3n) { 
+    background: darkgrey;
+} */
+
+/* h6:nth-last-child(3n+1) { 
+    background: darkgrey;
+} */
+
+/* trucos
+
+encontrar los primeros x Elementos
+
+*/
+/* h6 {
+    display: none;
+}
+h6:nth-last-child(-n + 5) {  
+    background: green;
+    display: block;
+} */
+/* Seleciona los elemntos a partir de un numero x */
+/* combinando para que sea pares */
+h6:nth-child(n + 5):nth-child(event) { 
+    background: green;
+    display: none;
+}
+/* 
+:nth-of-type()
+:nth-last-of-type()
+*/
