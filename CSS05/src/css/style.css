@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 500px;
+    --height: 250px;
+    --bg: red;
+    --br: 50px;
+}
+
+body{
+    background: #222;
+}
+
+.box {
+    width: var(--width);
+    height: var(--height);
+    background: var(--bg);
+    border: 1px solid black;
+}
+
+.boxe {
+    /* border-top-width: 20px;
+    border-top-style: solid;
+    border-top-color: blue;  */
+    border-top: 20px solid blue;
+}
+
+/* shorthand, agrupamiento de secuencias
+border-width
+border-style
+border-color
+*/
+
+h1 {
+    border-bottom: 2px dashed;
+    display: inline-block;
+    padding: 10px;
+}
+
+.boxq {
+    border: 50px solid;
+    border-color: transparent;
+    border-left-color: rgb(0, 255, 200);
+    display: inline-block;
+    padding: 0;
+}
+
+.box2 {
+    width: var(--width);
+    height: var(--height);
+    background: var(--bg);
+    border: 1px solid;
+    border-radius: var(--br);
+    padding: 0.01px;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+
+.play {
+    width: 150px;
+    height: 150px;
+    border: 75px solid;
+    border-color: transparent;
+    border-left-color: white;
+    margin: 50px auto 50px 200px;
+    transform: scaleY(0.65);
+    /* Esto sirve para manipular los ejes */
+}
+
+.outline {
+    width: var(--width);
+    height: var(--height);
+    background: var(--bg);
+    border: 2px solid blue;
+    outline: 10px solid red;
+}
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    color: yellow;
+    background: rgb(0, 0, 0);
+    box-shadow: 400px 0 20px red, 800px 0 blue, 200px 200px 10px 30px peru, 600px 200px, 0 400px, 400px 400px, 800px 400px 0 -30px;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    background: rgb(218, 88, 88);
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -15px -15px 20px 0 rgb(0,0,0,5) inset,
+                5px 5px 5px 0 rgba(255, 255, 255, .3) inset,
+                5px 5px 10px 0 rgba(255, 255, 255, .2);
+
+                /* Con esto podemos poner cuantos box-shadow: deseemos; */
+}
