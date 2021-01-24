@@ -1,0 +1,93 @@
+/* h1 {
+    background: rgb(252, 252, 8);
+    width: 8rem;
+    height: 100px;
+}
+
+p {
+    background: pink;
+    width: 8rem;
+}
+
+h2 {
+    background: palegreen;
+}
+
+span {
+    background: hotpink;
+}
+
+img {
+    width: 200px;
+} */
+
+/* Propiedades de display
+block -- convierte un elemento en bloque
+inline -- convierte un elemento en linea
+inline-block  -- convierte un elemnto en bloque y en linea
+none -- oculta 
+* Flex
+* Grid */
+
+/* h3 {
+    display: inline;
+    background: greenyellow;
+}
+
+
+
+/* Margin */
+
+.box {
+    width: 200px;
+    height: 100px;
+    background: pink;
+    margin: 20px 30px 10px 50px;
+    /* float: left;  ya no se lo utiliza, por que Grid lo hace mejor */
+}
+
+/* centrado con margin */
+
+img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 150px;
+    /* display: block es para centrar las imagenes */
+}
+
+/* colapsado de margenes verticales ? */
+
+.container {
+    width: 400px;
+    height: 300px;
+    background: purple;
+    padding: 0.1px;  /* con padding solucionamos el problema de colapso de imagenes  */
+}
+
+.caja {
+    margin: 50px;
+    background: yellow;
+}
+
+/* PADDING */
+
+/* la separacion del limite de la caja con su contenido  */
+
+.boxcla {
+    margin: 50px;
+    padding: 50px;
+    background: darkturquoise;
+    border: 1px solid red; /* Bordes */
+}
+
+/* Bordes 
+para los border jajajaja
+
+*/
+
+/* Con esto le decimos al navegador que respetes la altura y ancho pues anterior en los elementos */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
