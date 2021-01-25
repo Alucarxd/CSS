@@ -1,0 +1,98 @@
+/* background 
+
+backgroud es un shorthand
+no --> background: red;
+si --> background-color: red;
+background-image: url()
+background-repeat: no-repeat; --> no se repita
+
+background-size: ancho alto;
+background-position
+ background-position: left center right | top center bottom; 
+
+background-clip background-origin
+
+background-attachment: ; -- > si el contenedor va a ser scrooll
+
+background: image position / size repeat attachment origen clip
+
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* body { */
+    /* background-color: rgb(210, 219, 175); */
+    /* background-image: url(../img/corazon.svg); */
+    /* background-repeat: no-repeat; */
+/* } */
+
+/* body { */
+    /* background-size: contain | cover; */
+    /*  cover para poner en todo */
+    /* background-image: url(https://images.unsplash.com/photo-1549492423-ad03429371fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80); */
+    /* background-size: 300px; */
+    /* background-position: right bottom; */
+    /* background-position: right 20px bottom 20px; */
+/* } */
+
+/* background-clip background-origin */
+/* .box {
+    width: 500px;
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1549492423-ad03429371fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    margin: 100px;
+    border: 5px solid;
+    border-color: black blue;
+    background-clip: content-box; */
+    /*aqui rellono solo el contenido con content box */
+    /* padding: 10px;
+    box-shadow: 0 10px 30px 0 rgb(241, 228, 228);
+    background-origin: content-box;
+    
+} */
+
+/* background-attachment: ; */
+/* .box1 {
+    width: 600px;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1549492423-ad03429371fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80);
+    margin: 100px;
+    background-attachment: fixed;
+    background-size: 1500px;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1549492423-ad03429371fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80);
+    background-attachment: fixed;
+    background-size: 1500px;
+} */
+/* 
+body {
+    background-image: url(../img/corazon.svg),url(https://images.unsplash.com/photo-1549492423-ad03429371fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80);
+
+    background-size: 23% 50%;
+    background-position: 0 0, center center;
+    background-repeat: no-repeat;
+} */
+
+/* Shorthand background 
+background: image position / size repeat attachment origen clip
+*/
+
+
+body {
+    background: url(../img/corazon.svg) 0 0/* / 10% no-repeat*/, url(https://images.unsplash.com/photo-1549492423-ad03429371fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80) center center/* / 20% no-repeat*/, yellowgreen;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
