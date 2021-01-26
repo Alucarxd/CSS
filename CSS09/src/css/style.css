@@ -1,0 +1,109 @@
+/* Textos
+tipografia, la disciplina (area  0 carrera) que estudio el dise;o y uso de tipos de letra.
+
+fuente. Un tipo espeficio de letra, que ha sido creado por un disenador o por una empresa.
+
+Glifos. Son los dibujos que representan a cada caracter de la fuente.
+
+Estilos de fuente . Son las variaciones de una misma fuente (grosor, inclinacion).
+
+Familia tipografica. SOn varias fuentes con carateristicas 
+
+# El espanol es verivado del latin 
+
+
+
+Serif == terminan en adornos al final, estilo clasico
+
+Sans Serif == terminan en palo seco, mas actuales
+*/
+/* Unidades de medida : em y rem
+
+rem = tamano relativo a la raiz
+
+# Todos los navegadores tiene por defecto 16px en font-size: 16px
+
+*/
+
+/* :root {
+1rem = 16px ( siempre que no cambies el font-size de :root)
+
+1em = 100% del tamano de fuente del contexto
+} */
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    border: 1px solid #000;
+    background: #eee;
+    padding: .5em;
+}
+
+span {
+    font-size: 1.5em;
+}
+
+/* 
+EL span en el h1 mide 3rem * 1.5
+El span en - mide 2rem * 1.5
+
+rem para normalizar tamano de fuente
+em es bueno utilizar en padding
+
+
+text-align:  == texto alineado
+line-height: === altura de linea 
+    text-transform: lowercase; todo en minuscula
+    text-transform:uppercase; todo mayuscula
+    letter-spacing:  para separacion entre letra
+    word-spacing:  espacion entre palabra 
+
+
+*/
+
+.button {
+    background: hsl(200, 80%,45%);
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: .25em;
+}
+
+h1{
+text-align: center;
+line-height: 1.3;
+}
+
+p {
+    /* font-size: 2rem;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center; */
+    line-height: 1.6;
+    /* letter-spacing: 0.1em;
+    word-spacing: 0.1em; */
+}
+
+/* font-family */
+h1 {
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Open Sans';
+    color: #fff;
+    background: hsl(200,10%,30%);
+    /* text-shadow: x y blur color; */
+    text-shadow: 1px 1px 0 #000;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px #000;
+    color:#fff
+}
