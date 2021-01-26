@@ -1,0 +1,181 @@
+/* 
+Color
+frente (color) y fondo (background-color)
+currentColor para cojer la propiedad del colo anterior
+
+RGB
+*/
+
+/* body {
+    background-color: red;
+    color: wheat;
+} */
+
+/* h1 {
+    border: 1px solid;
+    box-shadow: 5px 5px 5px currentColor;
+} */
+
+p {
+    color: rgb(6, 255, 160);
+}
+
+a {
+    color: currentColor;
+}
+
+/* currentColor para cojer la propiedad del colo anterior */
+
+/* body {
+    background-color: rebeccapurple;
+} */
+
+/* Modo de color RGB
+Existen dos modos de color basicos 
+adictivo (la suma da blanca)
+    RGB (red, green, blue)
+sustrativo (la suma da negro
+    CMYK (cyan, magenta, yellow, black)
+
+    EN el modo RBG tenemos 8 bits de color, significa que cada canal tiene 
+    2^8 variaciones posibles (256) que comienzan en 0 y terminan en 255.
+
+    R (255) G (255) B (255) ~ 16.5 millones de colores
+
+    si estan iguales son colores grises
+
+    rgba ---> Es con transparencia
+*/
+
+/* body {
+    background-color: rgb(255, 0, 0); /* R */
+/* background-color: rgb(0, 255, 0);  */
+/* G */
+/* background-color: rgb(0, 0, 255);  */
+/* B */
+/* background-color: rgb(0, 255, 255);  */
+/* C */
+/* background-color: rgb(0, 255, 255); */
+/* M */
+/* background-color: rgb(255, 255, 0);  */
+/* Y */
+/* background-color: rgb(0, 0, 0);     */
+/* K */
+/*} */
+
+/* h1 {
+    color: rgba(255, 255, 255, 0.5)
+} */
+
+/* Notacion hexadecimal
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+rgb(255,0,0) = #FF0000; tambien #F00
+rgba(0,255,255) = #00FF00; tambien #0F0
+rgb(0,0,255) = #0000FF; tambien #00F
+rgb(0, 255, 255); = #00FFFF; tambien #0FF
+rgb(0, 255, 255); = #FF00FF; tambien #F0F
+rgb(255, 255, 0); = #FFFF00; tambien #FF0
+rgb(0,0,0) = #000000; tambien #000
+rgba(255,255,255) = #FFFFFF; tambien #FFF
+*/
+
+/* Modo de color HSL 
+Hue (tono, de 0 a 360 grados)
+    Circulo cromatico
+    0 rojo
+    60 amarillo
+    120 verde
+    180 cyan
+    250 azul
+    300 magenta
+    360 rojo
+
+Saturation (intensidad del color, de 0, gris a 100%, color puro)
+
+Light (Luz, de 0, negro, a 100%, blanco)
+*/
+
+/* body {
+    color, saturacion, luz
+    background-color: hsl(0, 84%, 40%);
+} */
+
+/* Degradados lineales
+background-image: linear-gradient(color1, color2, color3)
+background-image: linear-gradient(color1 [stop], color2 [stop], color3 [stop])
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+/* body{
+    background-image: linear-gradient(yellow 30%, red 25%, green 75%);
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+} */
+
+/* Degradados radiales
+background-image: redial-gradient(color1, color2, color3)
+background-image: redial-gradient(color1 [stop], color2 [stop], color3 [stop])
+background-image: redial-gradient([at x y] ,[at x y] color, color2 [stop], color3 [stop]) tambien con el tamano y forma 
+
+
+palabras clave para indicar el tamano:
+  * clossets-side -- lado cercano
+  * farthest-side -- lado lejano
+  * clossets-corner -- esquina cercana
+  * farthest-coner -- esquina lejana
+*/
+
+/* body {
+    background-image: radial-gradient(yellow, red, green);
+    background-image: radial-gradient(yellow 30%, red 50%, green 25%);
+    background-image: radial-gradient(at 100% 0,yellow 30%, red 50%, green 25%);
+    background-image: radial-gradient(circle at 50% 50%,yellow 30%, red 50%, green 25%);
+
+    background: none;
+} */
+
+.box {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 50px auto;
+}
+
+/* .box {
+    background-image: radial-gradient(closest-corner at 50% 50%, yellow 50%, red 50%);
+    background-image: radial-gradient(farthest-corner at 0 0, yellow 50%, red 50%);
+    background-size: 150%;
+} */
+
+*/
+/* /* body {
+    background-image: linear-gradient(yellow 25%, red 25%, red 60%, green 60%);
+    background-image: linear-gradient(to bottom right, yellow, red);
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+} */
+
+.box {
+    background-image: radial-gradient(farthest-corner at 0 0, yellow, red);
+}
+
+/* degradados reperidos
+
+*/
+
+
+
+body {
+    background-image: radial-gradient(yellow, red);
+    /* background-size: 20% 20%; */
+    /* background-image: repeating-radial-gradient(yellow 0, yellow 10%, red 0, red 20%); */
+    background-image: repeating-radial-gradient(white 0, white 5%, black 5%, black 10%);
+    /* Ilucion */
+    background-image: repeating-linear-gradient(white 0, white 20%, black 40%, black 1%);
+}
